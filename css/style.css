@@ -95,6 +95,10 @@ body {
     font-size: 50px;
 }
 
+.text-gray{
+    color: gray;
+}
+
 .bg-secondary{
     background-color: var(--color-bg-secondary);
 }
