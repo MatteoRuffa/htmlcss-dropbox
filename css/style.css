@@ -91,7 +91,7 @@ body {
 }
 
 .gap-column-table{
-    gap: 40px;
+    gap: 30px;
 }
 
 /* text/bg utility */
@@ -149,6 +149,11 @@ h2{
     font-weight: 700;
 }
 
+h3{
+    font-size: 25px;
+    padding-bottom: 20px; 
+}
+
 .jumbo{
     width: 100%;
 }
@@ -161,6 +166,22 @@ div.table div:first-child{
     border-bottom: 1px solid gray;
     color:red;
     padding: 12px;
+}
+
+div.table div:nth-child(2){
+    color: blue;
+    padding: 30px;
+    line-height: 30px;
+}
+
+ul>span{
+    color: green;
+    padding: 14px 30px;
+    gap: 5px;
+}
+
+div.table div:nth-child(4){
+    color: orange;
 }
 
 #hero{
