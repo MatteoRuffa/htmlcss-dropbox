@@ -86,6 +86,11 @@ body {
 .gap-column-hero{
     gap: 60px;
 }
+
+.gap-column-table{
+    gap: 40px;
+}
+
 /* text/bg utility */
 .text-format{
     line-height: 23px;
@@ -97,6 +102,10 @@ body {
 
 .text-gray{
     color: gray;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .bg-secondary{
@@ -139,6 +148,18 @@ h2{
 
 .jumbo{
     width: 100%;
+}
+
+.table:not(#prova) {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+div.table div:first-child{
+    border-bottom: 1px solid gray;
+    color:red;
+    padding: 12px;
+    padding: 0px;
 }
 
 #hero{
