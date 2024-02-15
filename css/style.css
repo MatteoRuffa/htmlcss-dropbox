@@ -174,12 +174,6 @@ div.table div:nth-child(2){
     line-height: 30px;
 }
 
-ul>span{
-    color: green;
-    padding: 14px 30px;
-    gap: 5px;
-}
-
 div.table div:nth-child(4){
     color: orange;
 }
