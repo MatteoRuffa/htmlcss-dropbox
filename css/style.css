@@ -82,10 +82,23 @@ body {
 /* header */
 header{
     background-color: var(--color-primary);
-    padding: 23px 23px 23px 4px ;
+    padding: 23px 23px 23px 4px;
+    height: 80px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
 }
 
 /* main */
+main{
+    padding-top: 80px;
+}
 
 /* footer */
 
