@@ -50,6 +50,7 @@ body {
 .small-container{
     max-width: 1000px;
     margin: 0px auto;
+    padding: 50px 0px;
 }
 
 .btn{
@@ -79,7 +80,7 @@ body {
 }
 
 .gap-header{
-    gap: 80px;
+    gap: 50px;
 }
 
 .gap-column-hero{
@@ -100,7 +101,7 @@ body {
 /* header */
 header{
     background-color: var(--color-primary);
-    padding: 23px 23px 23px 4px;
+    padding:  23px 4px 23px 23px ;
     height: 80px;
 }
 
@@ -116,6 +117,7 @@ header{
 li .btn {
     margin-left: -16px;
 }
+
 /* main */
 main{
     padding-top: 80px;
@@ -126,23 +128,30 @@ h1{
     font-weight: 900;
 }
 
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.jumbo{
+    width: 100%;
+}
+
 #hero{
     position: relative;
     top: 50px;
     left: 50px;
     
 }
+
 #column-hero{
     width: 70%;
 }
 
-#call-to-action {
-    
+#plan-business{
+    margin-top: 49px;
 }
 
-.jumbo{
-    width: 100%;
-}
 
 /* footer */
 
