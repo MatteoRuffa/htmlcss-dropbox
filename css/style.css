@@ -53,6 +53,10 @@ body {
     padding: 50px 0px;
 }
 
+.container-special{
+   width: 100%;
+}
+
 .btn{
     border: 1px solid var(--color-contarast);
     background-color: var(--color-contarast);
@@ -244,6 +248,34 @@ div.pdng>div{
     padding: 40px 0px;
 }
 
+.square-container{
+    width: calc(100% / 3);
+   
+}
+
+.big-square{
+    width: calc(100% / 2);
+   
+}
+
+.square{
+    
+}
+
+div.big-square img{
+    
+    /* width: 10em; */
+    max-width: 14em;
+    justify-content: center;
+    align-items: center;
+    /* aspect-ratio: 1 / 1; */
+    /* filter: invert(100%); */
+    padding: 20px;
+}
+
+
+
+
 div.action>div:first-child{
     width: 60%;
 }
@@ -289,7 +321,6 @@ details.pdng:last-child{
 
 footer .text-format{
     line-height: 35px;
-    font-size: 1.1em;
 }
 
 /* footer div:last-child{
