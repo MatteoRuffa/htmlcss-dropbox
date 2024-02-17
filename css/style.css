@@ -30,12 +30,12 @@ a:hover {
     --color-footer-bg: #000000;
     --color-contarast: #0061FF;
     --color-square-1: #A2D39B;
-    --color-square-1: #61082B;
-    --color-square-1: #0093CE;
-    --color-square-1: #FF1C1C;
-    --color-square-1: #D5001F;
-    --color-square-1: #0D2481;
-    --color-square-1: #FFD830;
+    --color-square-2: #61082B;
+    --color-square-3: #0093CE;
+    --color-square-4: #FF1C1C;
+    --color-square-5: #D5001F;
+    --color-square-6: #0D2481;
+    --color-square-7: #FFD830;
 }
 
 body {
@@ -239,6 +239,24 @@ div.action>div:first-child{
 
 div.action>div:last-child{
     width: 40%;
+}
+
+div.action h2 {
+    color: var(--color-square-2);
+}
+
+div.pdng :first-child{
+    
+}
+
+summary
+
+details.pdng{
+    border-top: 1px solid gray;
+}
+
+details.pdng:last-child{
+    border-bottom: 1px solid gray;
 }
 
 #hero{
