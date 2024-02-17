@@ -254,20 +254,18 @@ div.pdng>div{
 }
 
 .big-square{
-    width: calc(100% / 2);
-   
+    width: calc( 100% / 2 );
+     aspect-ratio: 1 / 1;
 }
 
-.square{
+/* .square{
     
-}
+} */
 
 div.big-square img{
-    
-    /* width: 10em; */
-    max-width: 14em;
+    width: 13em;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     /* aspect-ratio: 1 / 1; */
     /* filter: invert(100%); */
     padding: 20px;
