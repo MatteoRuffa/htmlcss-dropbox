@@ -214,7 +214,6 @@ div.table div:nth-child(4){
 
 div.contact>div:first-child{
     width: 70%;
-
 }
 
 div.contact>div:last-child{
@@ -234,7 +233,13 @@ div.pdng>div{
     padding: 40px 0px;
 }
 
+div.action>div:first-child{
+    width: 60%;
+}
 
+div.action>div:last-child{
+    width: 40%;
+}
 
 #hero{
     position: relative;
@@ -251,7 +256,10 @@ div.pdng>div{
     margin-top: 49px;
 }
 
-
+#call-to-action{
+    width: 80em;
+    border: 1px solid var(--color-primary);
+}
 
 
 /* footer */
