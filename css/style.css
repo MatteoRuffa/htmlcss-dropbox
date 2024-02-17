@@ -57,9 +57,15 @@ body {
     border: 1px solid var(--color-contarast);
     background-color: var(--color-contarast);
     color: var(--color-primary);
-    padding: 5px 16px;
+    padding: 10px 20px;
 }
 
+.btn-gray{
+    color: var(--color-footer-bg);
+    border:1px solid var(--color-footer-bg);
+    background-color: var(--color-primary); 
+    width: 10em;   
+}
 /* flex utility */
 .d-flex{
     display: flex;
@@ -149,13 +155,21 @@ h2{
     font-weight: 700;
 }
 
-h3{
+h3 {
     font-size: 25px;
     padding-bottom: 20px; 
 }
 
+div.text-format>h3{
+    line-height: 23px;
+}
+
 .jumbo{
     width: 100%;
+}
+
+.block-tables{
+    width: calc((100% / 3) - 60px);
 }
 
 .table {
@@ -170,13 +184,34 @@ div.table div:first-child{
 
 div.table div:nth-child(2){
     color: blue;
-    padding: 30px;
+    padding: 25px;
     line-height: 30px;
+}
+
+div.table ul:nth-child(3){
+    color: red;
+    padding-left: 10px;
+    line-height: 30px; 
 }
 
 div.table div:nth-child(4){
     color: orange;
 }
+
+.patner-img{
+    width: 100%;
+    display: block;
+}
+
+div.contact>div:first-child{
+    width: 70%;
+
+}
+
+div.contact>div:last-child{
+    width: 30%;
+}
+
 
 #hero{
     position: relative;
@@ -192,6 +227,8 @@ div.table div:nth-child(4){
 #plan-business{
     margin-top: 49px;
 }
+
+
 
 
 /* footer */

@@ -67,11 +67,9 @@
                 <!-- vedere ¡BENE! come fare i radio -->
                 <div class="d-flex gap-header">
                     <form action="#">
-                        <input type="radio" checked="checked" id="mensile" name="mensile" value="type of subscription">
+                        <input type="radio" checked="checked" id="mensile" name="type of subscription" value="mensile">
                         <label for="mensile">Fatturazione mensile</label>
-                    </form>
-                    <form action="#">
-                        <input type="radio" id="annuale" name="annuale" value="type of subscription">
+                        <input type="radio" id="annuale" name="type of subscription" value="annuale">
                         <label for="annuale">Fatturazione annuale</label>
                     </form>
                 </div>
@@ -114,10 +112,10 @@
                             <span>&euro;18.00</span><br>
                             <span class="text-gray">/utente/mese</span>
                         </div>
-                        <ul>
-                            <li><i class="fa-solid fa-users"></i> 3 o più utenti</li>
-                            <li><i class="fa-solid fa-folder"></i> Tutto lo spazio du cui ha bisogno il tuo team</li>
-                            <li><i class="fa-solid fa-share-nodes"></i> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del to team</li>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-users"></i></span> 3 o più utenti</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> Tutto lo spazio du cui ha bisogno il tuo team</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del to team</li>
                         </ul>
                         <div><a class="btn" href="#">Prova gratis per 30 giorni</a></div>
                         <span>oppure <a href="#">acquista ora</a></span>
@@ -142,19 +140,19 @@
                             <span><strong>Contattaci</strong></span><br>
                             <span class="text-gray">-</span>
                         </div>
-                        <ul>
-                            <li><i class="fa-solid fa-user"></i> 10 o più utenti</li>
-                            <li><i class="fa-solid fa-folder"></i> Soluzioni personalizzabili per la tua azienda</li>
-                            <li><i class="fa-solid fa-share-nodes"></i> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-user"></i></span> 10 o più utenti</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span> Soluzioni personalizzabili per la tua azienda</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                         </ul>
                         <div><a class="btn" href="#">Prova gratis per 30 giorni</a></div>
                         <span>oppure <a href="#">acquista ora</a></span>
                         <div class="d-flex column">
                             <h4>Punti salienti del piano</h4>
-                            <ul>
-                                <li>Cartelle offline su dispositivi mobili</li>
-                                <li>Servizio asistenza 24/h</li>
-                                <li>Possibilità di personalizzazione totale</li>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio asistenza 24/h</li>
+                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di personalizzazione totale</li>
                             </ul>
                         </div>
                     </div>
@@ -178,14 +176,17 @@
 
             </section">
             <!-- section contact -->
-            <section class="small-container debug">
-                <div><img src="./img/" alt=""></div>
-                <div>
-                    <h3>Entra in contatto con un patner Dropbox</h3>
-                    <p>Trova un patner Dropbox e helloSign di fiducia. Ottieni le soluzione e i servizi necessari per
-                        raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e
-                        supporto continui.</p>
-                    <a href="#">Trova un patner</a>
+            <section >
+                <div class="small-container debug d-flex contact gap ">
+                    <div><img class="patner-img" src="./img/partner.png" alt=""></div>
+                    <div class="d-flex column gap-column-table text-format">
+                        <!-- line heigh di h3! -->
+                        <h3>Entra in contatto con un patner Dropbox</h3>
+                        <p>Trova un patner Dropbox e helloSign di fiducia. Ottieni le soluzione e i servizi necessari per
+                            raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e
+                            supporto continui.</p>
+                        <a class="btn btn-gray" href="#">Trova un patner</a>
+                    </div>
                 </div>
             </section>
             <!-- section business -->
