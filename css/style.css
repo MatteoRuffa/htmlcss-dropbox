@@ -76,6 +76,10 @@ body {
 
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
 .space-btwn{
     justify-content: space-between;
 }
@@ -212,6 +216,14 @@ div.contact>div:last-child{
     width: 30%;
 }
 
+div.business>img{
+    width: 100%;
+}
+
+
+.card{
+    width: calc((100% / 3) );
+}
 
 #hero{
     position: relative;
