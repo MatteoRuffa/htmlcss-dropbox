@@ -71,7 +71,7 @@ body {
 }
 
 .btn-big{
-    width: 15em;
+    width: 17em;
     border: 1px solid var(--color-contarast);
     background-color: var(--color-contarast);
     color: var(--color-primary);
@@ -125,6 +125,10 @@ body {
 
 .gap-header{
     gap: 50px;
+}
+
+.gap-column {
+    gap: 15px;
 }
 
 .gap-column-hero{
@@ -281,6 +285,7 @@ div.text-format>h3{
 .table {
     border: 1px solid var(--color-neutral);
     width: 100%;
+    font-size: 15px;
 }
 
 div.table>div:first-child{
@@ -293,9 +298,9 @@ div.table>div:nth-child(2) {
 }
 
 div.table ul:nth-child(3){
-    padding: 20px;
-    line-height: 25px; 
-    margin-left: 30px;
+    padding: 25px 35px 25px 25px ;
+    line-height: 20px; 
+    margin-left: 20px;
 }
 
 div.table div:nth-child(4){
@@ -319,7 +324,7 @@ div.table div:nth-child(7) {
 
 div.table ul {
     padding: 0px 25px 60px 0px;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 div.enterprice>div:first-child{
