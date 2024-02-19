@@ -521,6 +521,9 @@ footer .text-format{
     line-height: 35px;
 }
 
+footer a {
+    color: white;
+}
 .end-footer{
     padding: 50px 6px;
     border-top: 1px solid var(--color-primary);
