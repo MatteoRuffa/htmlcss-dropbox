@@ -66,7 +66,17 @@ body {
     border: 1px solid var(--color-contarast);
     background-color: var(--color-contarast);
     color: var(--color-primary);
-    padding: 12px 30px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.btn-big{
+    width: 15em;
+    border: 1px solid var(--color-contarast);
+    background-color: var(--color-contarast);
+    color: var(--color-primary);
+    padding: 10px 20px;
+    text-align: center;
 }
 
 .btn-gray-1{
@@ -273,20 +283,19 @@ div.text-format>h3{
     width: 100%;
 }
 
-div.table div:first-child{
+div.table>div:first-child{
     border-bottom: 1px solid var(--color-neutral);
     color:red;
     padding: 12px;
 }
 
-div.table div:nth-child(2){
+div.table>div:nth-child(2) {
     color: blue;
     padding: 25px;
-    line-height: 30px;
 }
 
 div.table ul:nth-child(3){
-    color: red;
+    color: darkred;
     padding: 20px;
     line-height: 30px; 
     margin-left: 30px;
@@ -301,7 +310,21 @@ div.table div:nth-child(5) {
     padding: 20px;
 }
 
+div.enterprice>div:first-child{
+    width: 70%;
+}
 
+#enterprice{
+    padding-top: 35px;
+}
+
+div.sell-office div{
+    padding: 10px 0px 50px 0px ;
+}
+
+div.contact>div:first-child{
+    width: 70%;
+}
 .patner-img{
     width: 100%;
     display: block;
