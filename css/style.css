@@ -406,7 +406,11 @@ div.business>img{
     justify-content: center;
     padding: 40px;
     aspect-ratio: 1 / 1;
-    
+    transition: border 0.3s;
+}
+
+.square:hover {
+    border: 16px solid rgba(255, 255, 255, 0.274);
 }
   
 .square img {
