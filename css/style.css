@@ -33,7 +33,7 @@ html {
     --color-bg-secondary: #B4D0E7;
     --color-footer-bg: #000000;
     --color-contarast: #0061FF;
-    --color-neutral:  #D6D6D8;
+    --color-neutral:  #F5F5F5;
     --color-square-1: #A2D39B;
     --color-square-2: #61082B;
     --color-square-3: #0093CE;
@@ -43,6 +43,7 @@ html {
     --color-square-7: #FFD830;
 }
 
+/* modificare font piu "ampio" */
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -284,13 +285,13 @@ div.text-format>h3{
 }
 
 .table {
-    border: 1px solid var(--color-neutral);
+    border: 1px solid gray;
     width: 100%;
     font-size: 15px;
 }
 
 div.table>div:first-child{
-    border-bottom: 1px solid var(--color-neutral);
+    border-bottom: 1px solid gray;
     padding: 12px;
 }
 
@@ -316,11 +317,16 @@ div.table div:nth-child(7) {
     padding: 25px;
 }
 
-.row{
+.row {
     width: 50px;
     margin: 0px 25px ;
     padding-bottom: 20px;
-    border-top: 1px solid var(--color-neutral);
+    border-top: 1px solid gray;
+}
+
+.row-2 {
+    width: 100px;
+    border-top: 1px solid lightgray;
 }
 
 div.table ul {
@@ -377,7 +383,7 @@ div.business>img{
 
 
 .square-container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
   
@@ -398,10 +404,18 @@ div.business>img{
 .square img {
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 35px;
     max-width: 100%;
     max-height: 100%;
     filter: invert(100%);
+}
+
+.square-special {
+    background-color:var(--color-neutral);
+    padding: 40px;
+}
+div.logo-des>img {
+    width: 50%;
 }
 
 div.action>div:first-child{
@@ -456,10 +470,6 @@ div.pdng details:last-child{
 footer .text-format{
     line-height: 35px;
 }
-
-/* footer div:last-child{
-    border-top: 1px solid var(--color-primary);
-} */
 
 .end-footer{
     padding: 50px 6px;
