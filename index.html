@@ -21,8 +21,8 @@
     <!-- header -->
     <!-- flexare -->
     <!-- fixare -->
-    <header class="debug fixed">
-        <nav class=" debug d-flex space-btwn align-items ">
+    <header class=" fixed">
+        <nav class="d-flex space-btwn align-items ">
             <div>
                 <ul class="d-flex gap-header align-items">
                     <li><img src="./img/logo-small.png" alt=""></li>
@@ -44,8 +44,8 @@
     <!-- main -->
     <main>
         <!-- section hero-->
-        <section class="debug bg-secondary">
-            <div id="hero" class="big-container d-flex column gap-column-hero  debug">
+        <section class="bg-secondary">
+            <div id="hero" class="big-container d-flex column gap-column-hero">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="d-flex">
                     <div id="column-hero" class="d-flex column gap-column-hero text-format">
@@ -66,16 +66,18 @@
                 <h2>Trova il piano business che fa per te</h2>
                 <!-- vedere ¡BENE! come fare i radio -->
                 <div class="d-flex gap-header">
-                    <form action="#">
-                        <input type="radio" checked="checked" id="mensile" name="type of subscription" value="mensile">
-                        <label for="mensile">Fatturazione mensile</label>
-                        <input type="radio" id="annuale" name="type of subscription" value="annuale">
-                        <label for="annuale">Fatturazione annuale</label>
-                    </form>
+                    <label class="check-container d-flex align-items gap">
+                        <input type="radio" checked="checked" id="monthly" name="type of subscription" value="monthly">
+                        <span class="checkmark"></span><span>Fatturazione mensile</span>
+                    </label>
+                    <label class="check-container d-flex  align-items">
+                        <input type="radio" id="annual" name="type of subscription" value="annual">
+                        <span class="checkmark"></span><span>Fatturazione annuale</span>
+                    </label>
                 </div>
                 <div class="d-flex space-btwn gap">
                     <!-- prima tabella -->
-                    <div class="d-flex column table gap-column-table text-format">
+                    <div class="d-flex column table">
                         <div class="text-center">
                             <span><i class="fa-solid fa-user"></i> Singolo</span>
                         </div>
@@ -95,18 +97,17 @@
                             <a class="btn  " href="#">Prova gratis per 30 giorni</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
-                        <div class="d-flex column pdng-table">
-                            <h4>Punti salienti del piano</h4>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Invia file fino a 100 GB
-                                    con Dropbox Transfert</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
-                                    dispositivi mobili</li>
-                            </ul>
-                        </div>
+
+                        <div><strong>Punti salienti del piano</strong></div>
+                        <ul class="fa-ul d-flex column gap-column-table">
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Invia file fino a 100 GB
+                                con Dropbox Transfert</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Cartelle offline su
+                                dispositivi mobili</li>
+                        </ul>
                     </div>
                     <!-- seconda tabella -->
-                    <div class="d-flex column table gap-column-table">
+                    <div class="d-flex column table">
                         <div class="text-center">
                             <span><i class="fa-solid fa-users"></i> Team</span>
                         </div>
@@ -122,28 +123,26 @@
                             <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Sofisticate funzioni
                                 di controllo e per tenere al sicuro tutti i file del to team</li>
                         </ul>
-                        <div class="d-flex column align-items pdng-table">
+                        <div class="d-flex column align-items">
                             <a class="btn" href="#">Prova gratis per 30 giorni</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
-                        <div class="d-flex column pdng-table">
-                            <h4>Punti salienti del piano</h4>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Nessun limite di spazio
+                        <div><strong>Punti salienti del piano</strong></div>
+                        <ul class="fa-ul d-flex column gap-column-table">
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Nessun limite di spazio
                                     per i file</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+                             <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Cartelle offline su
                                     dispositivi mobili</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Risparmio del 50%
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Risparmio del 50%
                                     rispetto alle iscrizioni singole</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di inserire
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Possibilità di inserire
                                     nuovi membri del team</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Gestioni dei permessi in
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Gestioni dei permessi in
                                     base ai ruoli</li>
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                     <!-- terza tabella -->
-                    <div class="d-flex column table gap-column-table">
+                    <div class="d-flex column table">
                         <div class="text-center">
                             <span><i class="fa-solid fa-building"></i> Azienda</span>
                         </div>
@@ -159,36 +158,33 @@
                             <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span> Assistenza
                                 personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                         </ul>
-                        <div class="d-flex column align-items pdng-table">
-                            <a class="btn" href="#">Prova gratis per 30 giorni</a>
+                        <div class="d-flex column align-items">
+                            <a class="btn" href="#">Contattaci</a>
                             <span>oppure <a href="#">acquista ora</a></span>
                         </div>
-                        <div class="d-flex column pdng-table">
-                            <h4>Punti salienti del piano</h4>
-                            <ul class="fa-ul">
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su
+                        <div><strong>Punti salienti del piano</strong></div>
+                        <ul class="fa-ul d-flex column gap-column-table">
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Cartelle offline su
                                     dispositivi mobili</li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio asistenza 24/h
-                                </li>
-                                <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di
+                            <li>
+                                <span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Servizio asistenza 24/h
+                            </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check text-blue"></i></span>Possibilità di
                                     personalizzazione totale</li>
                             </ul>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- section enterprise -->
-        <section class="small-container debug">
-            <div>
-                <div>Team</div>
                 <div>
-                    <h3>Enterprise</h3>
-                    <span>Contata l'ufficio vendite per i prezzi</span>
-                    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
-                        su qualsiasi scala.</p>
-                </div>
-                <div><a class="btn" href="#">Contatta l'ufficio vendite</a></div>
+                    <div>Team</div>
+                    <div>
+                        <h3>Enterprise</h3>
+                        <span>Contata l'ufficio vendite per i prezzi</span>
+                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
+                            su qualsiasi scala.</p>
+                    </div>
+                    <div><a class="btn" href="#">Contatta l'ufficio vendite</a></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -290,7 +286,7 @@
                 
         </section>
         <!-- section teams -->
-        <section class="">
+        <section>
             <div class="small-container debug pdng">
                 <div>
                     <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
@@ -326,31 +322,31 @@
                 </div>
         </section>
         <!-- section call-to-action -->
-        <section class="bg-secondary">
+        <section id="call-to-action" class="bg-secondary">
             <div class="small-container debug d-flex action gap-header">
                 <div>
                     <h2>Porta Dropbox Business nella tua azienda.</h2>
                 </div>
-                <div><a id="call-to-action" class="btn btn-gray" href="#">Inizia la tua prova gratuita</a></div>
+                <div><a class="btn btn-gray" href="#">Inizia la tua prova gratuita</a></div>
             </div>
         </section>
          <!-- section F.A.Q. -->
-        <section >
+        <section i>
             <div class="small-container debug pdng">
                     <div>
                         <h2>Domande frequenti</h2>
                     </div>
                     <!-- vedere come spostare icona summary -->
-                    <details class="pdng">
-                        <summary>Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
+                    <details class="brdr-faq">
+                        <summary  class="pdng">Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur expedita ipsa quo, corrupti molestiae natus voluptatum maiores odio, unde atque delectus ad nemo esse exercitationem eligendi aperiam facere vero? Optio error dolor, nobis pariatur velit quo tempora quibusdam vitae expedita, ut a qui aperiam corrupti autem fugit doloremque quia!</p>
                     </details>
-                    <details class="pdng">
-                        <summary>Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
+                    <details class="brdr-faq">
+                        <summary  class="pdng">Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates cumque ducimus velit repudiandae sint, optio, vero doloremque iusto fugiat impedit, eaque illum nobis rerum architecto perferendis? Hic, minus quidem quo maxime quod ipsum eligendi accusantium, nulla inventore autem officiis repellendus blanditiis amet est iste eveniet quae veniam fugiat facilis.</p>
                     </details>
-                    <details class="pdng">
-                        <summary>Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
+                    <details class="brdr-faq">
+                        <summary  class="pdng">Qual è la differenza tra Dropbox Business Standar e Dropbox Business Advanced?</summary>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam, tempora quae aliquid provident distinctio ad ipsa ab laborum deleniti non veniam minima nesciunt cumque aut nemo! Tempora magnam neque provident nesciunt! Recusandae magnam quo illum tempora, molestiae impedit veritatis deleniti possimus nisi eveniet dignissimos perferendis. Consequatur adipisci numquam nam.</p>
                     </details>
                 </div>

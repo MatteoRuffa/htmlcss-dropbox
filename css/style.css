@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-ul {
+ul, summary {
     list-style: none;
 }
 
@@ -24,11 +24,16 @@ a:hover {
 }
 
 /* general */
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-primary: #FFFFFF;
     --color-bg-secondary: #B4D0E7;
     --color-footer-bg: #000000;
     --color-contarast: #0061FF;
+    --color-neutral:  #D6D6D8;
     --color-square-1: #A2D39B;
     --color-square-2: #61082B;
     --color-square-3: #0093CE;
@@ -50,7 +55,7 @@ body {
 .small-container {
     max-width: 1000px;
     margin: 0px auto;
-    padding: 50px 0px;
+    padding: 120px 4px;
 }
 
 .container-special{
@@ -61,15 +66,23 @@ body {
     border: 1px solid var(--color-contarast);
     background-color: var(--color-contarast);
     color: var(--color-primary);
-    padding: 10px 20px;
+    padding: 12px 30px;
 }
 
-.btn-gray{
+.btn-gray-1{
     color: var(--color-footer-bg);
-    border:1px solid var(--color-footer-bg);
+    border: 1px solid var(--color-bg-secondary);
     background-color: var(--color-primary); 
     width: 10em;   
 }
+
+.btn-gray-2{
+    color: var(--color-footer-bg);
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary); 
+    width: 10em;   
+}
+
 /* flex utility */
 .d-flex{
     display: flex;
@@ -90,7 +103,6 @@ body {
 
 .align-items{
     align-items: center;
-   
 }
 
 .align-contens{
@@ -100,6 +112,7 @@ body {
 .gap{
     gap: 40px;
 }
+
 .gap-header{
     gap: 50px;
 }
@@ -112,7 +125,7 @@ body {
     gap: 30px;
 }
 
-/* text/bg utility */
+/* text/bg uility */
 .text-format{
     line-height: 23px;
 }
@@ -123,6 +136,11 @@ body {
 
 .text-gray{
     color: gray;
+}
+
+.text-blue {
+    color: var(--color-contarast);
+    
 }
 
 .text-center{
@@ -170,19 +188,12 @@ body {
     background-color: #FFD830;
 }
 
-.pdng{
-    padding: 40px 0px;
-}
-
-.pdng-table{
-    padding: 8px;
-}
-
 /* header */
 header{
     background-color: var(--color-primary);
     padding:  23px 4px 23px 23px ;
     height: 80px;
+    box-shadow: 0px 1px 3px gray;
 }
 
 .fixed {
@@ -220,7 +231,7 @@ h3 {
 
 h4{
     font-size: 25px;
-    padding: 20px;
+    padding: 0px;
 }
 
 div.text-format>h3{
@@ -231,17 +242,39 @@ div.text-format>h3{
     width: 100%;
 }
 
+
+.check-container {
+    gap: 5px;
+}
+
+.check-container input {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border: 2px solid var(--color-neutral);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.check-container input:checked ~ .checkmark{
+    border: 5px solid var(--color-contarast);
+}
+
 .block-tables{
     width: calc((100% / 3) - 60px);
 }
 
 .table {
-    border: 1px solid gray;
+    border: 1px solid var(--color-neutral);
     width: 100%;
 }
 
 div.table div:first-child{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--color-neutral);
     color:red;
     padding: 12px;
 }
@@ -254,13 +287,20 @@ div.table div:nth-child(2){
 
 div.table ul:nth-child(3){
     color: red;
-    padding-left: 10px;
+    padding: 20px;
     line-height: 30px; 
+    margin-left: 30px;
 }
 
 div.table div:nth-child(4){
     color: orange;
 }
+
+div.table div:nth-child(5) {
+    color: violet;
+    padding: 20px;
+}
+
 
 .patner-img{
     width: 100%;
@@ -278,7 +318,6 @@ div.contact>div:last-child{
 div.business>img{
     width: 100%;
 }
-
 
 .card{
     width: calc((100% / 3) );
@@ -336,6 +375,18 @@ details.pdng:last-child{
     border-bottom: 1px solid gray;
 }
 
+summary::after{
+
+}
+
+.brdr-faq{
+    border-top: 1px solid gray;
+}
+
+div.pdng details:last-child{
+    border-bottom: 1px solid gray ;
+}
+
 #hero{
     position: relative;
     top: 50px;
@@ -350,12 +401,6 @@ details.pdng:last-child{
 #plan-business{
     margin-top: 49px;
 }
-
-#call-to-action{
-    width: 80em;
-    border: 1px solid var(--color-primary);
-}
-
 
 /* footer */
 
