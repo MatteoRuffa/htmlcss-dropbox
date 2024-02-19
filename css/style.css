@@ -441,17 +441,44 @@ details.pdng:last-child{
     border-bottom: 1px solid gray;
 }
 
-summary::after{
-
+summary{
+    font-weight: 700;
+    padding: 40px;
 }
 
-.brdr-faq{
+ .faq {
+    padding-bottom: 70px;
+ }
+
+.brdr-faq {
     border-top: 1px solid gray;
+    position: relative;
 }
 
-div.pdng details:last-child{
+summary::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f107';
+    position: absolute;
+    right: 0;
+}
+
+summary:focus::after {
+    transform: rotate(90deg);   
+}
+
+details p{
+    padding: 25px;
+}
+div.small-container>details:last-child {
+    border-bottom: 1px solid gray; ;
+}
+
+div.pdng details:last-child {
     border-bottom: 1px solid gray ;
 }
+
+
 
 #hero{
     position: relative;
