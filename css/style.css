@@ -87,11 +87,9 @@ body {
 
 .btn-gray-1{
     width: 12em;
-    padding: 10px 20px;
     border: 1px solid gray;
     color: var(--color-footer-bg);
     background-color: var(--color-primary); 
-    text-align: center;
 }
 
 .btn-gray-2{
