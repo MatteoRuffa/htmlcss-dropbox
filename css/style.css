@@ -232,6 +232,15 @@ li .btn {
     margin-left: -16px;
 }
 
+nav ul li ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
 /* main */
 main{
     padding-top: 80px;
