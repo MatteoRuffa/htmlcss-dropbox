@@ -59,7 +59,7 @@ body {
 }
 
 .container-special{
-   width: 100%;
+   padding-bottom: 0px;
 }
 
 .btn{
@@ -81,7 +81,7 @@ body {
 
 .btn-gray-1{
     color: var(--color-footer-bg);
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid gray;
     background-color: var(--color-primary); 
     width: 10em;   
 }
@@ -241,6 +241,7 @@ h2{
 h3 {
     font-size: 25px;
     padding-bottom: 20px; 
+    
 }
 
 h4{
@@ -346,6 +347,7 @@ div.sell-office div{
 div.contact>div:first-child{
     width: 70%;
 }
+
 .patner-img{
     width: 100%;
     display: block;
@@ -357,6 +359,7 @@ div.contact>div:first-child{
 
 div.contact>div:last-child{
     width: 30%;
+    padding-top: 80px;
 }
 
 div.business>img{
@@ -365,11 +368,13 @@ div.business>img{
 
 .card{
     width: calc((100% / 3) );
+    padding: 60px 40px 40px 0px;
 }
 
-div.pdng>div{
-    padding: 40px 0px;
+.teams{
+    padding: 120px 0px;
 }
+
 
 .square-container {
     width: 100%;
